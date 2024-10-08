@@ -23,7 +23,7 @@ class Boy:
         self.image=load_image('run_animation.png')
 
     def update(self):
-        self.frame = (self.frame + random.randint(1,5)) % 8  # 일정한 속도로 프레임 증가
+        self.frame = (self.frame + 1) % 8  # 일정한 속도로 프레임 증가
         self.x += 5  # 캐릭터의 x 좌표를 일정하게 증가시켜 이동
 
     def draw(self):
